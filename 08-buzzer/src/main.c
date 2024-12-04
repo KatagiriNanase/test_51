@@ -1,10 +1,9 @@
-#include "Int_KeyMatrix.h"
+#include "Int_Buzzer.h"
+#include "Com_Util.h"
 #include "Int_DigitalTube.h"
-#include <STC89C5xRC.H>
-
 void main()
 {
-    u8 key=0;
+    u8 key = 0;
     Int_DigitalTube_Init();
     while (1)
     {
@@ -13,6 +12,7 @@ void main()
         if (key)
         {
             Int_DigitalTube_DisplayNum(key);
+            Int_Buzzer_Buzz();
         }
         Int_DigitalTube_Refresh();
     }
