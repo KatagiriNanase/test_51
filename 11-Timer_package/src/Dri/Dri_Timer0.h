@@ -20,6 +20,6 @@ bit Dir_Timer0_RegisterCallBack(Timer0_Callback callback);
 */
 bit Dir_Timer0_DeregisterCallBack(Timer0_Callback callback);
 
-void Dir_Timer0_
+
 
 #endif /* __DRI_TIMER0_H__ */
